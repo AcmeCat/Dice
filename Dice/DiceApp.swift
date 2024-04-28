@@ -9,13 +9,17 @@ import SwiftUI
 import CoreData
 
 @main
-struct DiceApp: App
-{
-    var body: some Scene
-    {
-        WindowGroup
-        {
-            ContentView()
+struct DiceApp: App {
+    
+    @StateObject var rollViewModel: RollViewModel = RollViewModel()
+    
+    var body: some Scene {
+        WindowGroup {
+            NavigationStack {
+                RollView()
+            }
+            .environmentObject(rollViewModel)
+            .statusBar(hidden: true)
         }
     }
 }

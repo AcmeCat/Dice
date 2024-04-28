@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,7 @@
 		061D471E2552850B00BC1139 /* roll3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 061D471A2552850B00BC1139 /* roll3.mp3 */; };
 		061D471F2552850B00BC1139 /* roll2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 061D471B2552850B00BC1139 /* roll2.mp3 */; };
 		065FEEF92550186C005E5682 /* DiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065FEEF82550186C005E5682 /* DiceApp.swift */; };
-		065FEEFB2550186C005E5682 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065FEEFA2550186C005E5682 /* ContentView.swift */; };
+		065FEEFB2550186C005E5682 /* RollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065FEEFA2550186C005E5682 /* RollView.swift */; };
 		065FEEFD2550186E005E5682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065FEEFC2550186E005E5682 /* Assets.xcassets */; };
 		065FEF002550186E005E5682 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065FEEFF2550186E005E5682 /* Preview Assets.xcassets */; };
 		065FEF0B2550186F005E5682 /* DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065FEF0A2550186F005E5682 /* DiceTests.swift */; };
@@ -22,6 +22,9 @@
 		06DF783D25EF4B170006AD41 /* PresetRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF783C25EF4B170006AD41 /* PresetRoll.swift */; };
 		06DF784225EF50BF0006AD41 /* PresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF784125EF50BF0006AD41 /* PresetView.swift */; };
 		06DF784725EF653B0006AD41 /* Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF784625EF653B0006AD41 /* Presets.swift */; };
+		61CC33C32BDCC479002A0173 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CC33C22BDCC479002A0173 /* Dice.swift */; };
+		61CC33C52BDCCA4F002A0173 /* RollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CC33C42BDCCA4F002A0173 /* RollViewModel.swift */; };
+		61CC33C72BDE15C0002A0173 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CC33C62BDE15C0002A0173 /* DiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +53,7 @@
 		061D471B2552850B00BC1139 /* roll2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = roll2.mp3; sourceTree = "<group>"; };
 		065FEEF52550186C005E5682 /* Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		065FEEF82550186C005E5682 /* DiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceApp.swift; sourceTree = "<group>"; };
-		065FEEFA2550186C005E5682 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		065FEEFA2550186C005E5682 /* RollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollView.swift; sourceTree = "<group>"; };
 		065FEEFC2550186E005E5682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		065FEEFF2550186E005E5682 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		065FEF012550186E005E5682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +66,9 @@
 		06DF783C25EF4B170006AD41 /* PresetRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetRoll.swift; sourceTree = "<group>"; };
 		06DF784125EF50BF0006AD41 /* PresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetView.swift; sourceTree = "<group>"; };
 		06DF784625EF653B0006AD41 /* Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presets.swift; sourceTree = "<group>"; };
+		61CC33C22BDCC479002A0173 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		61CC33C42BDCCA4F002A0173 /* RollViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewModel.swift; sourceTree = "<group>"; };
+		61CC33C62BDE15C0002A0173 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +99,10 @@
 		061342332554C70900E63961 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				065FEEFA2550186C005E5682 /* ContentView.swift */,
+				065FEEFA2550186C005E5682 /* RollView.swift */,
 				061342192553858F00E63961 /* OptionsView.swift */,
 				06DF784125EF50BF0006AD41 /* PresetView.swift */,
+				61CC33C62BDE15C0002A0173 /* DiceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +143,8 @@
 			children = (
 				061342372554C72000E63961 /* Audio */,
 				065FEEF82550186C005E5682 /* DiceApp.swift */,
+				61CC33C02BDCC43C002A0173 /* Models */,
+				61CC33C12BDCC447002A0173 /* ViewModels */,
 				061342332554C70900E63961 /* Views */,
 				0613421E255385D700E63961 /* ColorScheme.swift */,
 				06DF783C25EF4B170006AD41 /* PresetRoll.swift */,
@@ -171,6 +180,22 @@
 				065FEF172550186F005E5682 /* Info.plist */,
 			);
 			path = DiceUITests;
+			sourceTree = "<group>";
+		};
+		61CC33C02BDCC43C002A0173 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				61CC33C22BDCC479002A0173 /* Dice.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		61CC33C12BDCC447002A0173 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				61CC33C42BDCCA4F002A0173 /* RollViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +260,9 @@
 		065FEEED2550186C005E5682 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1210;
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					065FEEF42550186C005E5682 = {
 						CreatedOnToolsVersion = 12.1;
@@ -307,11 +333,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				06DF783D25EF4B170006AD41 /* PresetRoll.swift in Sources */,
+				61CC33C72BDE15C0002A0173 /* DiceView.swift in Sources */,
 				06DF784225EF50BF0006AD41 /* PresetView.swift in Sources */,
+				61CC33C32BDCC479002A0173 /* Dice.swift in Sources */,
 				0613421F255385D800E63961 /* ColorScheme.swift in Sources */,
 				06DF784725EF653B0006AD41 /* Presets.swift in Sources */,
 				0613421A2553858F00E63961 /* OptionsView.swift in Sources */,
-				065FEEFB2550186C005E5682 /* ContentView.swift in Sources */,
+				065FEEFB2550186C005E5682 /* RollView.swift in Sources */,
+				61CC33C52BDCCA4F002A0173 /* RollViewModel.swift in Sources */,
 				065FEEF92550186C005E5682 /* DiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -385,6 +415,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -399,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -413,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -446,6 +478,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -454,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -474,7 +507,7 @@
 				DEVELOPMENT_TEAM = C256H3ZXQ8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Dice/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,7 +529,7 @@
 				DEVELOPMENT_TEAM = C256H3ZXQ8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Dice/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
